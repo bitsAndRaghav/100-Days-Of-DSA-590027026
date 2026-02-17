@@ -1,3 +1,3 @@
 # **Code6** *(LeetCode)-*
-## Write a function that reverses a string. The input string is given as an array of characters s. You must do this by modifying the input array in-place with O(1) extra memory.
-## **Solution Link-** https://leetcode.com/problems/reverse-string/
+## Given an integer n, return true if it is a power of two. Otherwise, return false. An integer n is a power of two, if there exists an integer x such that n == 2x.
+## **Solution Link-** https://leetcode.com/problems/power-of-two/
