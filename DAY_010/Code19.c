@@ -1,4 +1,4 @@
-// Check whether the given string is a palindrome using two-pointer comparison
+// Check whether the given string is a palindrome using two-pointer comparison.
 
 #include <stdio.h>
 #include <string.h>
