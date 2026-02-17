@@ -1,38 +1,35 @@
-/*
-Problem:
-Given a sorted array of n integers, remove duplicates in-place.
-Print only the unique elements in order.
-*/
+// Remove duplicates from a sorted array in-place and print only unique elements
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n;
-    int arr[100];
-
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    for(int i = 0; i < n; i++) {
-        printf("Enter element %d: ", i + 1);
+    int arr[n];
+    printf("Enter %d sorted elements:\n", n);
+    for(int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
-    }
 
-    if(n > 0) {
-        int k = 1;
+    if(n == 0)
+        return 0;
 
-        for(int i = 1; i < n; i++) {
-            if(arr[i] != arr[k - 1]) {
-                arr[k] = arr[i];
-                k++;
-            }
-        }
+    int index = 0;
 
-        printf("Unique elements:\n");
-        for(int i = 0; i < k; i++) {
-            printf("%d ", arr[i]);
+    for(int i = 1; i < n; i++)
+    {
+        if(arr[i] != arr[index])
+        {
+            index++;
+            arr[index] = arr[i];
         }
     }
+
+    printf("Unique elements are:\n");
+    for(int i = 0; i <= index; i++)
+        printf("%d ", arr[i]);
 
     return 0;
 }
