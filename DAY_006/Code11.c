@@ -1,4 +1,4 @@
-// Remove duplicates from a sorted array in-place and print only unique elements
+// Remove duplicates from a sorted array in-place and print only unique elements.
 
 #include <stdio.h>
 
